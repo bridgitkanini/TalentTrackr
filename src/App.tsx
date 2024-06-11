@@ -1,10 +1,13 @@
 import React from "react"
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
 
 function App() {
 
   return (
     <>
-      <h1 className="text-emerald-700">TalentTrackr you there?</h1>
+      <Navbar />
+      <Hero />
     </>
   )
 }
