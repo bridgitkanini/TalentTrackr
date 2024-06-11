@@ -26,7 +26,6 @@ const Navbar = () => {
         <nav className="flex justify-between items-center">
           <a href="#" className="text-gray-800 font-bold text-3xl">
             <img src={Logo} alt="logo" className="h-10 inline mr-1" />
-            Roots & Radiance
           </a>
           {/* Desktop Menu */}
           <div className="hidden sm:block">
@@ -35,7 +34,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href={menu.link}
-                    className="text-red-700 hover:text-gray-900 px-4 py-4 inline-block select-none"
+                    className="text-gray-700 hover:text-red-700 px-4 py-4 inline-block select-none"
                   >
                     {menu.name}
                   </a>
