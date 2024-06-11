@@ -1,7 +1,24 @@
 import React from "react";
 import Logo from "./../assets/logo.png";
 
-
+const DesktopMenus = [
+  {
+    name: "Home",
+    href: "#",
+  },
+  {
+    name: "About",
+    href: "#",
+  },
+  {
+    name: "Catalog",
+    href: "#",
+  },
+  {
+    name: "Contact",
+    href: "#",
+  },
+];
 const Navbar = () => {
   return (
     <header className="bg-white/80 shadow-lg">
@@ -14,43 +31,32 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden sm:block">
             <ul className="flex items-center justify-center gap-4">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-700 hover:text-gray-900 px-4 py-4 inline-block select-none"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-700 hover:text-gray-900 px-4 py-4 inline-block select-none"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-700 hover:text-gray-900 px-4 py-4 inline-block select-none"
-                >
-                  Catalog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-700 hover:text-gray-900 px-4 py-4 inline-block select-none"
-                >
-                  Contact
-                </a>
-              </li>
+              {DesktopMenus.map((menu) => (
+                <li>
+                  <a
+                    href={menu.link}
+                    className="text-red-700 hover:text-gray-900 px-4 py-4 inline-block select-none"
+                  >
+                    {menu.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Mobile Menu */}
-          <div></div>
+          <div className="sm:hidden block">
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  className="text-red-700 hover:text-gray-900 px-4 py-4 inline-block select-none font-semibold text-xl"
+                >
+                  Book Now
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
