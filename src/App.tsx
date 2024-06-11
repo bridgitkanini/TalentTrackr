@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <h1>TalentTrack you there?</h1>
+      <h1>TalentTrackr you there?</h1>
     </>
   )
 }
