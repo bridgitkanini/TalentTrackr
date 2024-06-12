@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Navbar.jsx";
 import { GrGallery } from "react-icons/gr";
 import { FaInstagram } from "react-icons/fa";

@@ -1,10 +1,8 @@
-import React from "react";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Partnerships from "./components/Partnerships";
-import Catalog from "./components/Catalog";
-import Contacts from "./components/Contacts";
-
+import Hero from "./components/Hero.tsx";
+import About from "./components/About.tsx";
+import Partnerships from "./components/Partnerships.tsx";
+import Catalog from "./components/Catalog.tsx";
+import Contacts from "./components/Contacts.tsx";
 
 function App() {
   return (
