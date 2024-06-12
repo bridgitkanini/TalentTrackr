@@ -1,5 +1,7 @@
 import React from "react";
-
+import img21 from "./../../public/images/21.jpg";
+import img26 from "./../../public/images/26.jpg";
+import Logo from "./../assets/logo.png";
 const About = () => {
   return (
     <main>
@@ -20,7 +22,54 @@ const About = () => {
           Roots & Radiance Photography - where every photo shines.
         </p>
       </div>
-      
+      <div className="flex flex-col gap-10 mx-auto">
+        <h1 className="text-center text-xl sm:text-3xl md:text-5xl">
+          Featured Campaigns
+        </h1>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2">
+          <div className=" flex flex-col justify-center items-center">
+            <h1 className=" text-center text-xl sm:text-3xl md:text-5xl">
+              ROOTS & RADIANCE
+            </h1>
+            <p className=" text-xs sm:text-sm md:text-xl text-center">
+              Enchanting frames - Endless Memories
+            </p>
+          </div>
+          <div>
+            <img src={img21} alt="model image" />
+          </div>
+          <div>
+            <img src={img26} alt="model image" />
+          </div>
+          <div className="flex flex-col justify-center items-center gap-4">
+            <svg viewBox="0 0 100 100" class="w-64 h-64">
+              <path
+                id="curve"
+                d="M 10,50 A 40,40 0 0,1 90,50"
+                fill="transparent"
+              />
+              <text>
+                <textPath href="#curve" startOffset="50%" text-anchor="middle">
+                  Your Moments
+                </textPath>
+              </text>
+            </svg>
+            <img src={Logo} alt="logo" className="h-20 sm:h-40 md:h-60" />
+            <svg viewBox="0 0 100 100" class="w-64 h-64">
+              <path
+                id="curve"
+                d="M 10,50 A 40,40 0 0,1 90,50"
+                fill="transparent"
+              />
+              <text>
+                <textPath href="#curve" startOffset="50%" text-anchor="middle">
+                  Our Lens
+                </textPath>
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
