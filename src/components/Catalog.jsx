@@ -37,8 +37,8 @@ const Catalog = () => {
   ];
 
   return (
-    <div className="p-5 md:p-10">
-      <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 lg:gap-5 [&>div:not(:first-child)]:mt-2 lg:[&>div:not(:first-child)]:mt-5">
+    <div id="catalog" className="p-5 md:p-10 lg:pt-24">
+      <div className="columns-2 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 lg:gap-5 [&>div:not(:first-child)]:mt-2 lg:[&>div:not(:first-child)]:mt-5">
         {imgGallery.map((img) => (
           <div className="overflow-hidden">
             <img
