@@ -20,7 +20,7 @@ const Hero = () => {
       <main style={bgImage}>
         <Navbar />
         <div className="flex flex-row">
-          <div className="flex flex-col items-start gap-4 mt-10 ml-8">
+          <div className="flex flex-col items-start gap-4 mt-10 ml-4 md:ml-8">
             <div className="w-1 h-40 mx-5 mt-4 border-r border-gray-300"></div>
             <div className="flex flex-col items-start gap-2">
               <span className="text-white w-12 h-12 flex justify-center items-center">
