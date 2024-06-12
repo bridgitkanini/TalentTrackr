@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Partnerships from "./components/Partnerships";
 import Catalog from "./components/Catalog";
+import Contacts from "./components/Contacts";
+
 
 function App() {
   return (
@@ -10,8 +12,9 @@ function App() {
       <div>
         <Hero />
         <About />
-        {/* <Partnerships /> */}
+        <Partnerships />
         <Catalog />
+        <Contacts />
       </div>
     </>
   );
