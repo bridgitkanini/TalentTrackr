@@ -38,9 +38,15 @@ const Catalog = () => {
 
   return (
     <div className="p-5 md:p-10">
-      <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 lg:gap-5 [&>img:not(:first-child)]:mt-2 lg:[&>img:not(:first-child)]:mt-5">
+      <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 lg:gap-5 [&>div:not(:first-child)]:mt-2 lg:[&>div:not(:first-child)]:mt-5">
         {imgGallery.map((img) => (
-          <img src={img} alt="img" />
+          <div className="overflow-hidden">
+            <img
+              src={img}
+              alt="img"
+              className="transform transition-transform duration-1000 hover:scale-125 hover:cursor-pointer"
+            />
+          </div>
         ))}
       </div>
     </div>
