@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <>
-      <main style={bgImage}>
+      <main id="home" style={bgImage}>
         <Navbar />
         <div className="flex flex-row">
           <div className="flex flex-col items-start gap-4 mt-10 ml-4 md:ml-8">

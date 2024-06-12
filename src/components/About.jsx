@@ -4,7 +4,7 @@ import img26 from "./../../public/images/26.jpg";
 import Logo from "./../assets/logo.png";
 const About = () => {
   return (
-    <main>
+    <main id="about">
       <div className="flex flex-col items-center justify-center h-[70vh] gap-10 mx-auto md:w-[750px]">
         <h1 className="text-center text-xl sm:text-3xl md:text-5xl">
           About Roots & Radiance

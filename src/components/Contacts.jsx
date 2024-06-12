@@ -17,7 +17,7 @@ const Contacts = () => {
   };
 
   return (
-    <main>
+    <main id="contacts">
       <div className="flex flex-col items-center justify-center h-[70vh] gap-10 mx-auto md:w-[750px]">
         <h1 className="text-center font-bold text-xl sm:text-2xl md:text-3xl">
           Contact Us
@@ -44,7 +44,7 @@ const Contacts = () => {
         style={bgImage}
         className="flex flex-col items-center justify-center"
       >
-        <div className="border-[20px] border-black grid grid-cols-4  sm:grid-cols-4 md:grid-cols-4 w-[450px] md:w-[950px] items-center justify-center">
+        <div className="border-[20px] border-black grid grid-cols-4  sm:grid-cols-4 md:grid-cols-4 w-[350px] md:w-[950px] items-center justify-center">
           <div className="h-full w-full">
             <img
               src={img14}
@@ -53,7 +53,7 @@ const Contacts = () => {
             />
           </div>
           <div className="bg-neutral-950 h-full flex flex-col justify-center items-center">
-            <h1 className=" text-white text-center text-sm sm:text-xl md:text-3xl">
+            <h1 className="hidden sm:block text-white text-center text-sm sm:text-xl md:text-3xl">
               ROOTS & RADIANCE
             </h1>
             <p className=" text-white text-xs sm:text-xs md:text-sm text-center">
@@ -64,9 +64,9 @@ const Contacts = () => {
             <img src={img34} alt="model image" />
           </div>
           <div className="bg-neutral-950  h-full flex flex-col justify-center items-center text-white text-center text-xs sm:text-base md:text-2xl">
-            <p>ELEGANT</p>
-            <p>TIMELESS</p>
-            <p>AUTHENTIC</p>
+            <p>ELEGANT.</p>
+            <p>TIMELESS.</p>
+            <p>AUTHENTIC.</p>
           </div>
         </div>
       </div>

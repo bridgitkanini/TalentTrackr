@@ -4,24 +4,28 @@ import Logo from "./../assets/logo.png";
 const DesktopMenus = [
   {
     name: "Home",
-    href: "#",
+    href: "#home",
   },
   {
     name: "About",
-    href: "#",
+    href: "#about",
+  },
+  {
+    name: "Partnerships",
+    href: "#partnerships",
   },
   {
     name: "Catalog",
-    href: "#",
+    href: "#catalog",
   },
   {
-    name: "Contact",
-    href: "#",
+    name: "Contacts",
+    href: "#contacts",
   },
 ];
 const Navbar = () => {
   return (
-    <header className="bg-white/80 shadow-lg">
+    <header className="bg-white/80 shadow-lg fixed top-0 w-full z-10">
       <div className="container">
         <nav className="flex justify-between items-center">
           <a href="#" className="text-gray-800 font-bold text-3xl">
@@ -33,7 +37,7 @@ const Navbar = () => {
               {DesktopMenus.map((menu) => (
                 <li>
                   <a
-                    href={menu.link}
+                    href={menu.href}
                     className="text-gray-700 hover:text-red-700 px-4 py-4 inline-block select-none"
                   >
                     {menu.name}
@@ -48,8 +52,8 @@ const Navbar = () => {
             <ul>
               <li>
                 <a
-                  href="#"
-                  className="text-red-700 hover:text-gray-900 px-4 py-4 inline-block select-none font-semibold text-xl"
+                  href="#contact"
+                  className="text-gray-700 hover:text-gray-900 px-4 py-4 inline-block select-none font-semibold text-xl"
                 >
                   Book Now
                 </a>
