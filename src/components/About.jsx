@@ -31,7 +31,7 @@ const About = () => {
             <h1 className=" text-center text-xl sm:text-3xl md:text-5xl">
               ROOTS & RADIANCE
             </h1>
-            <p className=" text-xs sm:text-sm md:text-xl text-center">
+            <p className="text-xs sm:text-sm md:text-xl text-center">
               Enchanting frames - Endless Memories
             </p>
           </div>
@@ -41,29 +41,42 @@ const About = () => {
           <div>
             <img src={img26} alt="model image" />
           </div>
-          <div className="flex flex-col justify-center items-center gap-4">
-            <svg viewBox="0 0 100 100" class="w-64 h-64">
+          <div className="flex flex-col justify-center items-center">
+            <svg viewBox="0 0 100 100" className="w-40 h-40 text-xs sm:text-sm md:text-base">
               <path
-                id="curve"
+                id="lowerCurve"
                 d="M 10,50 A 40,40 0 0,1 90,50"
                 fill="transparent"
               />
               <text>
-                <textPath href="#curve" startOffset="50%" text-anchor="middle">
-                  Your Moments
+                <textPath
+                  href="#lowerCurve"
+                  startOffset="50%"
+                  text-anchor="middle"
+                >
+                  Your Memories
                 </textPath>
               </text>
             </svg>
-            <img src={Logo} alt="logo" className="h-20 sm:h-40 md:h-60" />
-            <svg viewBox="0 0 100 100" class="w-64 h-64">
+            <img
+              src={Logo}
+              alt="logo"
+              className="h-20 sm:h-32 md:h-40 -my-32 rounded-[95%]"
+            />
+
+            <svg viewBox="0 0 100 100" className="w-40 h-40 text-xs sm:text-sm md:text-base mt-4 md:mt-8">
               <path
-                id="curve"
-                d="M 10,50 A 40,40 0 0,1 90,50"
+                id="upperCurve"
+                d="M 10,50 A 40,40 0 0,0 90,50"
                 fill="transparent"
               />
               <text>
-                <textPath href="#curve" startOffset="50%" text-anchor="middle">
-                  Our Lens
+                <textPath
+                  href="#upperCurve"
+                  startOffset="50%"
+                  text-anchor="middle"
+                >
+                  Our Camera Lens
                 </textPath>
               </text>
             </svg>
