@@ -1,6 +1,6 @@
-import img35 from "./../../public/images/35.jpg";
-import img14 from "./../../public/images/14.jpg";
-import img34 from "./../../public/images/34.jpg";
+const img35 = "/images/35.jpg";
+const img14 = "/images/14.jpg";
+const img34 = "/images/34.jpg";
 
 const Contacts = () => {
   const bgImage = {

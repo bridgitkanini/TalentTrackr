@@ -1,6 +1,8 @@
-import img21 from "./../../public/images/21.jpg";
-import img26 from "./../../public/images/26.jpg";
 import Logo from "./../assets/logo.png";
+
+const img21 = "/images/21.jpg";
+const img26 = "/images/26.jpg";
+
 const About = () => {
   return (
     <main id="about">

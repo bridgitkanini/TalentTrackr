@@ -67,7 +67,7 @@ TalentTrackr/
 
 3. Start the development server:
    ```bash
-   pnpm run dev
+   pnpm dev
    # or
    yarn dev
    ```
@@ -79,7 +79,7 @@ TalentTrackr/
 To create a production build:
 
 ```bash
-pnpm run build
+pnpm build
 # or
 yarn build
 ```
@@ -113,7 +113,7 @@ The build artifacts will be stored in the `dist/` directory.
 ### Linting
 
 ```bash
-pnpm run lint
+pnpm lint
 # or
 yarn lint
 ```
@@ -121,7 +121,7 @@ yarn lint
 ### Building
 
 ```bash
-pnpm run build
+pnpm build
 # or
 yarn build
 ```
@@ -129,7 +129,7 @@ yarn build
 ### Previewing Production Build
 
 ```bash
-pnpm run preview
+pnpm preview
 # or
 yarn preview
 ```
