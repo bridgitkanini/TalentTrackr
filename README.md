@@ -140,8 +140,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-For inquiries, please contact [your-email@example.com](mailto:your-email@example.com)
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
